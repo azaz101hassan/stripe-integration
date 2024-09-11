@@ -1,9 +1,12 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { STORE_NAME } from "../constants";
 
 function Header() {
+  const { totalCount } = useSelector((state) => state.store);
+
   return (
     <AppBar position="static">
       <Toolbar className="toolbar">
@@ -16,6 +19,9 @@ function Header() {
           </Link>
           <Link className="link" to="/checkout">
             <Typography variant="overline">Cart</Typography>
+            <Typography variant="overline" style={{ fontWeight: "bold" }}>
+              ({totalCount})
+            </Typography>
           </Link>
         </div>
       </Toolbar>
