@@ -121,3 +121,49 @@
   float: right;
 }
 /* End Checkout Page section */
+
+/* Payment Successful section */
+.s-div {
+  text-align: center;
+}
+
+.s-payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 25px;
+  margin: 10% auto;
+}
+
+.s-media {
+  width: 100px !important;
+  margin: 0 auto;
+}
+/* End Payment Successful section */
+
+/* Payment Page section */
+.payment-div {
+  min-height: 65vh;
+}
+
+.payment-card {
+  padding: 15px;
+  margin: 10% auto;
+  margin-bottom: 0%;
+  float: none;
+}
+
+.pay-button {
+  width: 100% !important;
+  text-decoration: none;
+}
+
+.pay-credentials {
+  text-align: center;
+  color: red;
+}
+
+.card-number {
+  font-weight: bold;
+}
+/* End Payment Page section */
